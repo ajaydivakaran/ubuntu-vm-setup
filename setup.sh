@@ -1,3 +1,7 @@
+#!/bin/bash
+
+#Install dependencies via package manager
+
 apt-get update && apt-get upgrade -y && \
 apt-get install -y git git-gui gitk terminator apt-transport-https \
     ca-certificates curl software-properties-common
@@ -9,8 +13,3 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 apt-get update && apt-get install -y docker-ce docker-compose
-
-#Configure Git
-git config --global user.email "ajay_886@hotmail.com"
-git config --global user.name "Ajay"
-
