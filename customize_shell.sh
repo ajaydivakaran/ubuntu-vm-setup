@@ -1,9 +1,5 @@
 #!/bin/bash
 
-read -s -p "Enter bitbucket password" bitpwd
-echo
-read -p "Enter email id" email
-
 #Configure Git
 git config --global user.email "${email}"
 git config --global user.name "Ajay"

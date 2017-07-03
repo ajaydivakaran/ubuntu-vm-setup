@@ -1,9 +1,14 @@
 #!/bin/bash
 
+
+read -s -p "Enter bitbucket password:" bitpwd
+echo
+read -p "Enter email id:" email
+
 #Install dependencies via package manager
 
 apt-get update && apt-get upgrade -y && \
-apt-get install -y git git-gui gitk terminator apt-transport-https \
+apt-get install -y git git-gui gitk byobu apt-transport-https \
     ca-certificates curl software-properties-common
 
 #Install Docker
@@ -13,3 +18,5 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 apt-get update && apt-get install -y docker-ce docker-compose
+
+sudo -u $SUDO_USER "./customize_shell.sh" 
