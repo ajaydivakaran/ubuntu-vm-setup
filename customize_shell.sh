@@ -11,6 +11,9 @@ git clone https://ajayd:${bitpwd}@bitbucket.org/ajayd/my-ssh-keys.git ~/projects
 #Remove password for config file
 sed -i "s/:${bitpwd}//" ~/projects/my-ssh-keys/.git/config
 
+#Replace https url to git url
+sed -i "s/https:\/\/github\.com\//git@github.com:/" ./.git/config
+
 #Copy ssh keys
 mkdir -p ~/.ssh
 cp ~/projects/my-ssh-keys/* ~/.ssh/
