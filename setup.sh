@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 read -s -p "Enter bitbucket password:" bitpwd
 echo
 read -p "Enter email id:" email
@@ -18,6 +17,13 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 apt-get update && apt-get install -y docker-ce docker-compose
+
+#Install chrome
+apt-get install libgconf2-4 libnss3-1d libxss1
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp/chrome
+dpkg -i /tmp/chrome/google-chrome-stable_current_amd64.deb
+apt-get install -f
+
 
 sudo -u $SUDO_USER "./customize_shell.sh" 
 sudo -u $SUDO_USER "./setup_ide.sh" 
