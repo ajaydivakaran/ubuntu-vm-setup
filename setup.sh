@@ -20,3 +20,4 @@ add-apt-repository \
 apt-get update && apt-get install -y docker-ce docker-compose
 
 sudo -u $SUDO_USER "./customize_shell.sh" 
+sudo -u $SUDO_USER "./setup_ide.sh" 
