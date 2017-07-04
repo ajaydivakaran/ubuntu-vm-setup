@@ -23,5 +23,5 @@ apt-get install libgconf2-4 libnss3-1d libxss1
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp/chrome
 dpkg -i /tmp/chrome/google-chrome-stable_current_amd64.deb
 
-sudo -u $SUDO_USER "./customize_shell.sh" 
-sudo -u $SUDO_USER "./setup_ide.sh" 
+su - $SUDO_USER -e -c "./customize_shell.sh" 
+su - $SUDO_USER -e -c "./setup_ide.sh" 
