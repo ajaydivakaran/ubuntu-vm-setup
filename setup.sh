@@ -4,6 +4,9 @@ read -s -p "Enter bitbucket password:" bitpwd
 echo
 read -p "Enter email id:" email
 
+export bitpwd
+export email
+
 #Install dependencies via package manager
 
 apt-get update && apt-get upgrade -y && \
