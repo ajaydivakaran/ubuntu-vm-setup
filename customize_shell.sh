@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Running script as sudo_user: $SUDO_USER and user: $USER"
+
 #Configure Git
 git config --global user.email "${email}"
 git config --global user.name "Ajay"
