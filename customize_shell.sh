@@ -22,7 +22,7 @@ chmod -R g-rwx,o-rwx ~/.ssh/
 #Personalize shell
 git clone git@github.com:ajaydivakaran/dot-files.git ~/projects/dot-files
 
-mv ~/.bashrc ~/.bashrc.backup
+cp ~/.bashrc ~/.bashrc.backup
 echo "source ~/projects/dot-files/bashrc_customize" >> ~/.bashrc
 
 
