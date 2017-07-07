@@ -22,7 +22,7 @@ add-apt-repository \
 apt-get update && apt-get install -y --allow-unauthenticated docker-ce docker-compose
 
 #Install chrome
-apt-get install libgconf2-4 libnss3-1d libxss1
+apt-get install -y libgconf2-4 libnss3-1d libxss1
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp/chrome
 dpkg -i /tmp/chrome/google-chrome-stable_current_amd64.deb
 apt-get -f install -y --allow-unauthenticated
