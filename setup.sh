@@ -20,6 +20,8 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 apt-get update && apt-get install -y --allow-unauthenticated docker-ce docker-compose
+gpasswd -a $SUDO_USER docker
+
 
 #Install chrome
 apt-get install -y libgconf2-4 libnss3-1d libxss1
