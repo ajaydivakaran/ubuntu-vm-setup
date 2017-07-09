@@ -10,7 +10,7 @@ export email
 #Install dependencies via package manager
 
 apt-get update && apt-get upgrade -y && \
-apt-get install -y git git-gui gitk byobu apt-transport-https \
+apt-get install -y git git-gui gitk terminator apt-transport-https \
     ca-certificates curl software-properties-common
 
 #Install Docker
