@@ -24,5 +24,7 @@ git clone git@github.com:ajaydivakaran/dot-files.git ~/projects/dot-files
 
 cp ~/.bashrc ~/.bashrc.backup
 echo "source ~/projects/dot-files/bashrc_customize" >> ~/.bashrc
+mkdir -p ~/.config/terminator
+cp ~/projects/dot-files/terminator/config ~/.config/terminator/config
 
 
