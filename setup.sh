@@ -11,7 +11,7 @@ export email
 
 apt-get update && apt-get upgrade -y && \
 apt-get install -y git git-gui gitk terminator apt-transport-https \
-    ca-certificates curl software-properties-common
+    ca-certificates curl software-properties-common bash-completion
 
 #Install Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
